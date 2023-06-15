@@ -38,6 +38,14 @@
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
+  <script type="text/javascript">
+    let useHtml = true
+    if(useHtml) {
+      window.flutterWebRenderer = "html";
+    } else {
+      window.flutterWebRenderer = "canvaskit";
+    }
+</script>
 </head>
 <body>
   <script>
